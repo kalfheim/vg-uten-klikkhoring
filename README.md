@@ -11,3 +11,5 @@
 - Pakk ut `master.zip`
 
 - Åpne *chrome://extensions/* og trykk på "Load unpacked extension..." (velg mappen du har pakket ut)
+
+<img src="https://media.giphy.com/media/3ohhwrnCZ5Hmz3CaWI/giphy.gif">
