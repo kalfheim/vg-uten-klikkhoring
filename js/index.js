@@ -75,4 +75,8 @@ function initbaby() {
 	extracts.forEach(extract => observer.observe(extract));
 }
 
-document.addEventListener('load', initbaby());
+if (document.readyState === 'complete') {
+	initbaby();
+} else {
+	document.addEventListener('load', initbaby());
+}
