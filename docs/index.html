@@ -13,6 +13,7 @@
       }
 
       body {
+        display: flex;
         margin: 0;
         padding: 4rem;
         border-top: solid .5rem rgba(0,0,0,.75);
@@ -56,28 +57,44 @@
       footer a {
         color: #111;
       }
+
+      main {
+        max-width: 40rem;
+        margin-right: 5rem;
+      }
     </style>
   </head>
   <body>
-    <p>Dra knappen til bokmerkelinjen:</p>
-    <p>
-      <a
-        class="bookmarklet"
-        href="javascript:(function(){var s=document.createElement('script');s.async=1;s.src='https://cdn.rawgit.com/kalfheim/vg-uten-klikkhoring/b4c44d22/js/index.js';document.head.appendChild(s);})();"
+    <main>
+      <p>Dra knappen til bokmerkelinjen:</p>
+      <p>
+        <a
+          class="bookmarklet"
+          href="javascript:(function(){var s=document.createElement('script');s.async=1;s.src='https://cdn.rawgit.com/kalfheim/vg-uten-klikkhoring/b4c44d22/js/index.js';document.head.appendChild(s);})();"
+        >
+          VG uten klikkhoring
+        </a>
+      </p>
+      <p style="margin-top: 5rem;">
+        Eller—installer Chrome exstension
+      </p>
+      <ul>
+        <li>Last ned <a href="https://github.com/kalfheim/vg-uten-klikkhoring/archive/master.zip">master.zip</a>
+        <li>Pakk ut master.zip
+        <li>Åpne <b>chrome://extensions/<b> og trykk på "Load unpacked extension..." (velg mappen du har pakket ut)
+      </ul>
+      <footer>
+        <a href="https://github.com/kalfheim/vg-uten-klikkhoring">Tilbake til GitHub</a>
+      </footer>
+    </main>
+    <aside>
+      <img
+        src="https://media.giphy.com/media/3ohhwrnCZ5Hmz3CaWI/giphy.gif"
+        alt=""
+        style="float: right;"
+        width="354"
+        height="480"
       >
-        VG uten klikkhoring
-      </a>
-    </p>
-    <p style="margin-top: 5rem;">
-      Eller—installer Chrome exstension
-    </p>
-    <ul style="max-width: 40rem;">
-      <li>Last ned <a href="https://github.com/kalfheim/vg-uten-klikkhoring/archive/master.zip">master.zip</a>
-      <li>Pakk ut master.zip
-      <li>Åpne <b>chrome://extensions/<b> og trykk på "Load unpacked extension..." (velg mappen du har pakket ut)
-    </ul>
-    <footer>
-      <a href="https://github.com/kalfheim/vg-uten-klikkhoring">Tilbake til GitHub</a>
-    </footer>
+    </aside>
   </body>
 </html>
