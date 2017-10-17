@@ -1,0 +1,23 @@
+{
+  "name": "vg-uten-klikkhoring",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "VG.no uten klikkhoring",
+  "homepage_url": "https://github.com/kalfheim/vg-uten-klikkhoring",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.vg.no/*",
+        "http://www.vg.no/*"
+      ],
+      "js": [
+        "js/index.js"
+      ]
+    }
+  ]
+}
