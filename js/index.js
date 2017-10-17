@@ -4,12 +4,6 @@ const ignoredHosts = [
   'direkte.vg.no',
 ];
 
-// These guys don't support security.
-const whoGivesAFuckAboutHttps = [
-  // 'www.minmote.no',
-  // 'pluss.vg.no',
-];
-
 function superFetch(url) {
   if (url.indexOf('https://www.vg.no/') === 0) {
     return fetch(url);
