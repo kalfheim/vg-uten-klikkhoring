@@ -1,7 +1,13 @@
 # vg-uten-klikkhoring
 
-## Bookmarklet
+> Krever ES2015 + async/await. Fungerer i Chrome. Bookmarklet fungerer _sannsynligvis_ i alle moderne nettlesere
 
-```
-javascript:(function(){var s=document.createElement('script');s.async=1;s.src='https://cdn.rawgit.com/kalfheim/vg-uten-klikkhoring/b4c44d22/js/index.js';document.head.appendChild(s);})();
-```
+### [How-To: Installasjon av bookmarklet](https://kalfheim.github.io/vg-uten-klikkhoring/)
+
+### Installasjon av extension
+
+- [Last ned master.zip](https://github.com/kalfheim/vg-uten-klikkhoring/archive/master.zip)
+
+- Pakk ut `master.zip`
+
+- Åpne *chrome://extensions/* og trykk på "Load unpacked extension..." (velg mappen du har pakket ut)

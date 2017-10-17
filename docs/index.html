@@ -1,0 +1,75 @@
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <title>VG.no uten klikkhoring</title>
+    <style>
+      @keyframes fancyBackground {
+        from {
+          background-position: top;
+        }
+        to {
+          background-position: bottom;
+        }
+      }
+
+      body {
+        margin: 0;
+        padding: 4rem;
+        border-top: solid .5rem rgba(0,0,0,.75);
+        background-image: linear-gradient(hsl(350, 83%, 47%), hsl(370, 82%, 47%));
+        background-size: auto 300%;
+        -webkit-font-smoothing: antialiased;
+        font-family: serif;
+        font-size: 24px;
+        color: #fff;
+        animation: fancyBackground 4s linear infinite alternate;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(2160deg);
+        }
+      }
+
+      .bookmarklet {
+        display: inline-block;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        color: #333;
+        border-radius: .25rem;
+        background-color: #fff;
+        box-shadow: 0 .125rem .25rem 0 rgba(0,0,0,.1);
+        animation: spin ease-in-out 2s;
+      }
+
+      footer {
+        margin-top: 20rem;
+        font-size: 14px;
+      }
+
+      footer a {
+        color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Dra knappen til bokmerkelinjen:</p>
+    <p>
+      <a
+        class="bookmarklet"
+        href="javascript:(function(){var s=document.createElement('script');s.async=1;s.src='https://cdn.rawgit.com/kalfheim/vg-uten-klikkhoring/b4c44d22/js/index.js';document.head.appendChild(s);})();"
+      >
+        VG uten klikkhoring
+      </a>
+    </p>
+    <footer>
+      <a href="https://github.com/kalfheim/vg-uten-klikkhoring">Tilbake til GitHub</a>
+    </footer>
+  </body>
+</html>
