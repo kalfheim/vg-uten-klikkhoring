@@ -2,7 +2,7 @@
 
 > Krever ES2015 + async/await. Fungerer i Chrome. Bookmarklet fungerer _sannsynligvis_ i alle moderne nettlesere
 
-### [How-To: Installasjon av bookmarklet](https://kalfheim.github.io/vg-uten-klikkhoring/)
+### [How-To: Installasjon av bookmarklet](https://kalfheim.github.io/vg-uten-klikkhoring/docs/)
 
 ### Installasjon av extension
 
