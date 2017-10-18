@@ -10,7 +10,7 @@ function superFetch(url) {
   }
 
   // let's hope this thing is up most of the time
-  return fetch(`https://cors-anywhere.herokuapp.com/${url}`);
+  return fetch(`https://cors-baby.herokuapp.com/${url}`);
 }
 
 async function fetchMetaFromAnything(url) {
