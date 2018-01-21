@@ -26,9 +26,22 @@ async function fetchMetaFromAnything(url) {
     await superFetch(url)
   ).text();
 
+  const template = document.createElement('template');
+  template.innerHTML = html;
+
+  function meta(attribute) {
+    const meta = template.content.querySelector(`meta[${attribute}]`);
+
+    if (! meta) {
+      return;
+    }
+
+    return meta.content;
+  }
+
   return {
-    title: html.match(/<meta (?:name|property)="(?:twitter|og):title" content="([^"]+)"/)[1],
-    description: html.match(/<meta (?:name|property)="(?:twitter|og):description" content="([^"]+)"/)[1],
+    title: meta('property="og:title"') || meta('property="twitter:title"') || template.content.querySelector('title').innerText,
+    description: meta('name=description') || meta('property="og:description"') || meta('property="twitter:description"'),
   };
 }
 
